@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>9-Dot Bento Menu Workspace</title>
+  
+  <script type="module" src="https://cdn.jsdelivr.net/npm/ionicons@7/dist/ionicons/ionicons.esm.js"></script>
+  
+  <link rel="stylesheet" href="nevibar.css">
+</head>
+<body>
+
+  <div class="bg-glow"></div>
+  <div class="bg-grid"></div>
+
+  <div class="hero-content">
+    <h1>Dynamic NeviBar Workspace</h1>
+    <p>Press the dots to explore the interactive dashboard elements.</p>
+  </div>
+
+  <div class="navigation" id="nav">
+
+    <span style="--x:-1;--y:-1;--i:4" data-color="purple" data-label="Home">
+      <ion-icon name="home-outline"></ion-icon>
+    </span>
+    <span style="--x:0;--y:-1;--i:3" data-color="blue" data-label="Search">
+      <ion-icon name="search-outline"></ion-icon>
+    </span>
+    <span style="--x:1;--y:-1;--i:4" data-color="teal" data-label="Profile">
+      <ion-icon name="person-outline"></ion-icon>
+    </span>
+
+    <span style="--x:-1;--y:0;--i:2" data-color="amber" data-label="Alerts">
+      <ion-icon name="notifications-outline"></ion-icon>
+    </span>
+
+    <span class="close-tile" style="--x:0;--y:0;--i:0" id="closeSpan">
+      <ion-icon name="close-outline"></ion-icon>
+    </span>
+
+    <span style="--x:1;--y:0;--i:2" data-color="green" data-label="Stats">
+      <ion-icon name="bar-chart-outline"></ion-icon>
+    </span>
+
+    <span style="--x:-1;--y:1;--i:1" data-color="pink" data-label="Saved">
+      <ion-icon name="heart-outline"></ion-icon>
+    </span>
+    <span style="--x:0;--y:1;--i:3" data-color="sky" data-label="Messages">
+      <ion-icon name="mail-outline"></ion-icon>
+    </span>
+    <span style="--x:1;--y:1;--i:1" data-color="orange" data-label="Settings">
+      <ion-icon name="settings-outline"></ion-icon>
+    </span>
+
+  </div>
+
+  <p class="hint" id="hint">Click the dots to open</p>
+  <div class="toast" id="toast"></div>
+
+  <script src="nevibar.js"></script>
+</body>
+</html>
